@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #282828;
+  color: white;
+  padding: 0;
+}
+
+.top {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #cb2a37;
+  width: 100%;
+  border-bottom: 2px solid #444;
+}
+
+.bottom {
+  height: 40vh;
+  width: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.stopwatchText {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.timerText {
+  font-size: 8rem;
+  margin: 10px 0;
+}
+
+.buttonDiv {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.buttonInnerFirst,
+.buttonInnerSecond {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background: none;
+  border: 2px solid white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background: white;
+  color: black;
+}
+
+.laps {
+  margin-top: 20px;
+}
+
+.lap {
+  background: #333;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.lap:hover {
+  background: #555;
+}
+
+.buttonInnerText {
+  margin-left: 0.5rem;
+}
+
+.lapsText {
+  font-size: 1.5rem;
+}
+
+.bottomInner {
+  width: 50%;
+}
+
+.lapText {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lapInnerText {
+  font-size: 1.2rem;
+}
+.lapDesText {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.bottomAlternative {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottomAlternativeText {
+  font-size: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .timerText {
+    font-size: 5rem;
+    margin: 10px 0;
+  }
+  .bottomAlternativeText {
+    font-size: 2rem;
+  }
+  .buttonDiv {
+    width: 90%;
+  }
+
+  button {
+    padding: 3px 10px;
+    font-size: 1rem;
+  }
+}
