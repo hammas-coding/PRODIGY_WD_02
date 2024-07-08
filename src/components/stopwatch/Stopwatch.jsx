@@ -97,7 +97,7 @@ const Stopwatch = () => {
           <div className={styles.bottomInner}>
             {laps.length > 0 && (
               <p className={styles.lapDesText}>
-                Click to on lap to remove that lap
+                Click on lap to remove that lap
               </p>
             )}
             {laps.map((lap, index) => (
